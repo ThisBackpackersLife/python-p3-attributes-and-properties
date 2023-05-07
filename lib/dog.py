@@ -1,16 +1,16 @@
 #!/usr/bin/env python3
 # import ipdb
 
-APPROVED_nameS = [
-    "Mastiff",
-    "Chihuahua",
-    "Corgi",
-    "Shar Pei",
-    "Beagle",
-    "French Bulldog",
-    "Pug",
-    "Pointer"
-]
+approved_breeds = [
+        "Mastiff", 
+        "Chihuahua", 
+        "Corgi", 
+        "Shar Pei", 
+        "Beagle", 
+        "French Bulldog", 
+        "Pug", 
+        "Pointer"
+    ]
 
 class Dog:
     def __init__(self, name='Fido', breed='Mastiff'):
@@ -34,7 +34,7 @@ class Dog:
         return self._breed
     
     def set_breed(self, breed):
-        if breed in APPROVED_nameS:
+        if breed in approved_breeds:
             self._breed = breed
         else:
             print( "Breed must be in list of approved breeds." )
